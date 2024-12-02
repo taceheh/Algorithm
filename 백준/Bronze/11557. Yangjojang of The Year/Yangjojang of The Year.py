@@ -1,6 +1,7 @@
-# Yangjojang of The Year
+
+
 import sys
-# 테스트케이스  
+# 테스트케이스
 t = int(sys.stdin.readline())
 result=[]
 
@@ -21,8 +22,4 @@ for _ in range(t):
         if int(amount)>max_amount:
             max_amount=int(amount)
             first_uni= name
-    result.append(first_uni)
-
-
-for r in result:
-    print(r)
+    print(first_uni)

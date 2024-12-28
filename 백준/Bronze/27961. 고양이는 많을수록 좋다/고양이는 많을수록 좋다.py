@@ -7,18 +7,16 @@ input = sys.stdin.readline
 
 n = int(input())
 cat = 1 # 초기 고양이의 수
-cnt =0 # 행동횟수
+cnt =1 # 행동횟수
 
-if n==0:
+if n==0: 
     print(0)
-elif n ==1:
-    print(1)
-else: 
-    while cat !=n:
+else: # 생성 1+ 복제 *2
+    while cat <n:
         if cat>= n-cat:
             cat+=n-cat
             cnt+=1
         else:
             cat = cat+cat
             cnt +=1
-    print(cnt+1)
+    print(cnt)
